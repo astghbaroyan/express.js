@@ -16,7 +16,7 @@ app.get("/static", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-   req.require("/file.json");
+   req.json("/file.json");
    
 });
 
