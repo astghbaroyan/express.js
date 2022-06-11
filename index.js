@@ -10,8 +10,8 @@ app.get('/', function (req, res) {
 })
 
 app.use(express.static("static")); 
-app.get("/", (req, res) => {
-   req.require('file.html');
+app.get("/static", (req, res) => {
+   req.require('/file.html');
    
 });
 
